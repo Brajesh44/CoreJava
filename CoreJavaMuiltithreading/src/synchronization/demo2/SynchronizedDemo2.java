@@ -28,9 +28,9 @@ Mythread t2= new Mythread(d1, "YuvRaj");
  * then we will get irrregular out put
  * code snipet is below
  * 	Display d1= new Display();
-		Display d2= new Display();
+		
 		Mythread t1= new Mythread(d1, "Dhoni");
-		Mythread t2= new Mythread(d2, "YuvRaj");
+		Mythread t2= new Mythread(d1, "YuvRaj");
 	             t1.start();
 	             t2.start();
  * 
@@ -58,8 +58,9 @@ public class SynchronizedDemo2 {
 	public static void main(String[] args) {
 		Display d1= new Display();
 		Display d2= new Display();
-		Mythread t1= new Mythread(d1, "Dhoni");
-		Mythread t2= new Mythread(d2, "YuvRaj");
+		
+		Mythread t1= new Mythread(d1,"Dhoni");
+		Mythread t2= new Mythread(d2,"YuvRaj");
 	             t1.start();
 	             t2.start();
 	
