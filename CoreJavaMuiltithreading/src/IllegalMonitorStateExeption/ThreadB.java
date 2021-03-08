@@ -11,7 +11,7 @@ public class ThreadB extends Thread {
 		 for (int i = 1; i <=100; i++)
 		 {
 			 tottal= tottal+i; 
-			 this.notify();
+			 notify();
 		}
 		 System.out.println("5Statement child thread calulation is completed");
 		 System.out.println("6Statement wating thread which is responsile to accept updation through notify()");
